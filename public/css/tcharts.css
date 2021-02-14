@@ -1,0 +1,25 @@
+
+.tchart {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+.tchart-date{
+    min-width: 120px;
+}
+.tchart-debit{
+    border-right: 1px solid #888;
+    min-width: 50px;
+    text-align: right;
+}
+.tchart-credit{
+    min-width: 50px;
+}
+.tchart-th{
+    border-bottom: 1px solid #888;
+}

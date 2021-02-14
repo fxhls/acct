@@ -1,0 +1,33 @@
+<h2>Journal Entries</h2>
+{{#each journalEntries}}
+    <div class="je-wrapper">
+        <div class="je">
+            <div class="je-date">
+             {{date}}
+                
+                <div style="width:10px;" class="tooltip no-print">
+                    <img style="width:10px;" src="/img/help.png" >
+                    <span class="tooltiptext">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin arcu ante, at dignissim ante mattis vel. Ut iaculis ipsum vitae nunc dictum, nec tempor ante gravida. Maecenas libero nunc, malesuada vitae sodales eu, finibus ut ex. Maecenas purus eros, accumsan a blandit eget, dignissim id eros. Nam pulvinar augue vel lacus mattis, quis imperdiet neque imperdiet. Etiam id dignissim nisi. Donec fringilla imperdiet sem ut auctor. Aliquam nulla velit, blandit consectetur ante eu, ullamcorper dignissim mi. Integer molestie eros at venenatis consectetur. Vestibulum ultricies justo at diam tempus, dapibus facilisis mi tincidunt. Fusce ut lacus ultrices, aliquam nisi non, maximus elit. Curabitur sed libero in enim convallis feugiat in a velit. Cras lorem metus, sollicitudin nec faucibus et, accumsan a augue. Duis eget massa ut purus pulvinar fermentum eget sed quam. Nulla facilisi.
+                    </span>
+                </div>
+            </div>
+            <div class="{{style}} je-accounts">
+                {{#each accounts}}
+                    <div class="je-account je-{{style}}"> 
+                        <div class="je-account-name">
+                            {{name}}
+                        </div>
+                        <div class="je-value">
+                            <div>{{debit}}</div>
+                            <div>{{credit}}</div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="je je-description">
+            {{description}}
+        </div>
+    </div>
+{{/each}}

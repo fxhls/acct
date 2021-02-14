@@ -1,0 +1,44 @@
+.je {
+    display: flex;
+    flex:90%;
+    padding: 2px;
+    flex-direction: row;
+}
+.je-wrapper {
+    border-bottom: 2px solid #888;
+}
+
+.je-accounts {
+    flex:80%;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+
+}
+.je-account{
+    display:flex;
+
+}
+.je-date{
+    display:flex;
+    flex:20%;
+    flex-direction: column;
+}
+.je-account-name{
+    flex:30%;
+}
+.je-value{
+    flex:60%;
+    display: flex;
+
+}
+.je-value div{
+    flex:auto;
+    text-align: right;
+}
+.je-description{
+    font-style: italic;
+}
+.je-credit {
+    padding-left: 80px;
+}

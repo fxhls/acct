@@ -1,0 +1,38 @@
+{{#each tcharts as |value key|}}
+<div style="page-break-inside: avoid;">
+    <h2>
+        {{key}}
+    </h2>
+    <table class="tchart">
+        <tr>
+            <th class="tchart-date">date</th>
+            <th class="tooltip  no-print">
+                <img style="width:10px;" src="/img/help.png" >
+                <span class="tooltiptext">
+                    Journal Entry description    
+                </span>                     
+            </th>
+            <th class="tchart-th">debit</th>
+            <th class="tchart-th">credit</th>
+            <th style="width: 20px"/>
+            <th class="">Account <br>Balance</th>
+        </tr>
+        {{#each value}}
+            <tr class="tchart-date">
+                <td >{{date}}</td>
+                <td  class="tooltip no-print">
+                    <img style="width:10px;" src="/img/help.png" >
+                    <span class="tooltiptext">
+                        {{description}}
+                    </span>
+                </td>  
+                <td class="tchart-debit">{{debit}}</td>
+                <td >{{credit}}</td>
+                <td style="width: 20px"/>
+                <td >{{balanceType}}: {{accountBalance}}</td>
+            </tr>
+            
+        {{/each}}  
+    </table>
+    </div>
+{{/each}}
