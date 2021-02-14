@@ -6,6 +6,9 @@ const basicExpense = require('./basicExpense.js')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
 
+//initialize app
+const app = express()
+const port = process.env.PORT || 3000
 
 const schema = {
     journalEntries:[
@@ -116,8 +119,6 @@ const schema = {
 }
 ]}
 
-//initialize app
-const app = express()
 
 //Define Paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -206,4 +207,5 @@ app.get('/*',(req,res)=>{
  
 //How to start the server
 //devport: 3000, http: port:80
-app.listen(3000,()=>{'server is up on port 3000.'})
+
+app.listen(port,()=>{'server is up on port '+port})
