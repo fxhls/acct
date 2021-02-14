@@ -5,9 +5,6 @@ const searchElement = document.querySelector('input')
 const error = document.querySelector('#error')
 const success = document.querySelector('#success')
 
-
-console.log(searchElement)
-
 weatherForm.addEventListener('submit',(e) => {
     e.preventDefault()
     const location = searchElement.value
@@ -16,7 +13,6 @@ weatherForm.addEventListener('submit',(e) => {
         console.log(data)
         error.textContent = data.error
         success.textContent = data.forecast
-
     }
     )
 
